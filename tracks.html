@@ -1,0 +1,546 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-background font-body-md text-on-surface">
+    <header
+      class="fixed top-0 w-full z-50 bg-surface-glass backdrop-blur-2xl border-b border-border-glow shadow-[0_4px_24px_rgba(0,0,0,0.4)]"
+    >
+      <div
+        class="h-20 w-full px-safe-area md:px-margin-xl flex items-center justify-between"
+      >
+        <div class="flex items-center gap-unit">
+          <img
+            alt="Sonic Precision Logo"
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoggLBv3pA14YNcMcbBTmJYSub-KUnmS3cLwuKFS6Q1yDZQVrXmpzddCWHZEpOhJuF3kkx3yIsb16LJ8MzSgDvARFzHf1FD-3zxYcJ2J35XDaja0QNGxdIo9gqZ8MLndxHYrxlwyFnMVX6P09FTNzBJ4WkYHvfSB6yf_7HJ95HMgohzISE-ThY_59uW3U_A2-XwsmwNrrs-c-pwmuxb7roGRa8l9gA6rwUno0Y46cyZ3uo27M-vIg"
+          />
+          <span
+            class="font-headline-md text-primary tracking-tighter uppercase"
+          >
+            Sonic Precision
+          </span>
+        </div>
+
+        <nav
+          class="hidden md:flex items-center gap-gutter-md"
+          data-active-classes="text-primary font-bold"
+        >
+          <a
+            aria-current="page"
+            class="transition-all uppercase text-primary font-bold font-label-caps"
+            data-path="home"
+            href="./index.html"
+          >
+            Главная
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="portfolio"
+            href="./portfolio.html"
+          >
+            Работы
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="player"
+            href="./tracks.html"
+          >
+            Треки
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="services"
+            href="./services.html"
+          >
+            Услуги
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="order"
+            href="./order.html"
+          >
+            Заказ
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="w-full pt-20 min-h-screen">
+      <div class="flex flex-col w-full relative min-h-screen">
+        <!-- Ambient Studio Background -->
+        <div
+          class="fixed inset-0 pointer-events-none z-[-1] overflow-hidden opacity-30 mix-blend-screen"
+        >
+          <svg
+            class="absolute w-[200vw] h-[2048px] -top-[512px] -left-[50vw] animate-[spin_120s_linear_infinite]"
+            preserveaspectratio="none"
+            viewbox="0 0 100 100"
+          >
+            <defs>
+              <radialgradient cx="50%" cy="50%" id="glow" r="50%">
+                <stop
+                  offset="0%"
+                  stop-color="var(--tw-colors-primary)"
+                  stop-opacity="0.15"
+                ></stop>
+                <stop
+                  offset="100%"
+                  stop-color="transparent"
+                  stop-opacity="0"
+                ></stop>
+              </radialgradient>
+            </defs>
+            <circle cx="50" cy="50" fill="url(#glow)" r="50"></circle>
+          </svg>
+        </div>
+        <div
+          class="px-safe-area py-12 max-w-[1440px] mx-auto w-full flex-grow flex flex-col gap-16"
+        >
+          <!-- Header -->
+          <header class="flex flex-col gap-4 relative">
+            <div
+              class="absolute -left-8 top-2 text-on-surface-variant/20 font-display-lg text-display-lg [writing-mode:vertical-rl] opacity-10 select-none"
+            >
+              SEQ-01
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="w-12 h-px bg-primary"></span>
+              <span
+                class="font-label-caps text-label-caps text-primary uppercase tracking-widest"
+                >Master Output</span
+              >
+            </div>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">
+              Recent Bounces
+            </h2>
+          </header>
+          <!-- Tracklist / DAW Area -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-md relative">
+            <!-- Left: Metadata/Filters (3 cols) -->
+            <aside
+              class="col-span-1 lg:col-span-3 flex flex-col gap-8 hidden md:flex"
+            >
+              <div
+                class="bg-surface-glass backdrop-blur-xl border border-border-glow rounded-xl p-6 shadow-xl relative overflow-hidden group"
+              >
+                <div
+                  class="absolute top-0 right-0 w-16 h-16 bg-primary/5 rounded-bl-full blur-xl transition-all group-hover:bg-primary/20"
+                ></div>
+                <h3
+                  class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-4 tracking-widest"
+                >
+                  Session Info
+                </h3>
+                <div class="flex flex-col gap-4 font-body-md text-body-md">
+                  <div
+                    class="flex justify-between items-center border-b border-outline-variant/30 pb-2"
+                  >
+                    <span class="text-on-surface-variant">Sample Rate</span>
+                    <span
+                      class="text-primary font-mono bg-surface-container-highest px-2 py-1 rounded"
+                      >48kHz</span
+                    >
+                  </div>
+                  <div
+                    class="flex justify-between items-center border-b border-outline-variant/30 pb-2"
+                  >
+                    <span class="text-on-surface-variant">Bit Depth</span>
+                    <span
+                      class="text-primary font-mono bg-surface-container-highest px-2 py-1 rounded"
+                      >24-bit</span
+                    >
+                  </div>
+                  <div class="flex justify-between items-center pb-2">
+                    <span class="text-on-surface-variant">BPM</span>
+                    <span
+                      class="text-primary font-mono bg-surface-container-highest px-2 py-1 rounded"
+                      >124.5</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-surface-glass backdrop-blur-xl border border-border-glow rounded-xl p-6 shadow-xl"
+              >
+                <h3
+                  class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-4 tracking-widest"
+                >
+                  Processing Chain
+                </h3>
+                <div class="flex flex-col gap-3">
+                  <div
+                    class="flex items-center gap-3 bg-surface-container-highest/50 p-2 rounded border border-outline-variant/20"
+                  >
+                    <div
+                      class="w-2 h-2 rounded-full bg-secondary-container shadow-[0_0_8px_var(--tw-colors-secondary-container)]"
+                    ></div>
+                    <span class="text-on-surface font-label-caps uppercase"
+                      >Analog Summing</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center gap-3 bg-surface-container-highest/50 p-2 rounded border border-outline-variant/20"
+                  >
+                    <div
+                      class="w-2 h-2 rounded-full bg-error shadow-[0_0_8px_var(--tw-colors-error)]"
+                    ></div>
+                    <span class="text-on-surface font-label-caps uppercase"
+                      >Tape Saturation</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center gap-3 bg-surface-container-highest/50 p-2 rounded border border-outline-variant/20"
+                  >
+                    <div
+                      class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_var(--tw-colors-primary-container)]"
+                    ></div>
+                    <span class="text-on-surface font-label-caps uppercase"
+                      >Master Bus EQ</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <!-- Right: Tracklist (9 cols) -->
+            <div class="col-span-1 lg:col-span-9 flex flex-col gap-6">
+              <!-- Active Track -->
+              <div
+                class="bg-surface-glass backdrop-blur-2xl border border-primary/30 rounded-xl p-6 shadow-[0_0_40px_rgba(212,175,55,0.1)] relative overflow-hidden group cursor-pointer transition-all"
+              >
+                <div
+                  class="absolute left-0 top-0 bottom-0 w-1 bg-primary shadow-[0_0_10px_var(--tw-colors-primary)]"
+                ></div>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                  <!-- Play/Pause -->
+                  <button
+                    class="w-16 h-16 rounded-full bg-primary flex items-center justify-center shrink-0 hover:scale-105 transition-transform shadow-[0_0_20px_rgba(212,175,55,0.4)]"
+                  >
+                    <span
+                      class="material-symbols-outlined text-on-primary text-3xl"
+                      style="font-variation-settings: 'FILL' 1"
+                      >pause</span
+                    >
+                  </button>
+                  <!-- Info -->
+                  <div class="flex-grow flex flex-col min-w-0 w-full">
+                    <div class="flex justify-between items-end mb-4">
+                      <div class="flex flex-col min-w-0">
+                        <div class="flex items-center gap-2 mb-2">
+                          <span class="relative flex h-2 w-2">
+                            <span
+                              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
+                            ></span>
+                            <span
+                              class="relative inline-flex rounded-full h-2 w-2 bg-primary"
+                            ></span>
+                          </span>
+                          <span
+                            class="font-label-caps text-label-caps text-primary uppercase"
+                            >Playing</span
+                          >
+                        </div>
+                        <h4
+                          class="font-headline-md text-headline-md text-on-surface truncate"
+                        >
+                          Neon Nights (Club Mix)
+                        </h4>
+                        <span
+                          class="font-body-lg text-body-lg text-on-surface-variant truncate"
+                          >Artist Name</span
+                        >
+                      </div>
+                      <div class="flex flex-col items-end hidden md:flex">
+                        <span
+                          class="font-label-caps text-label-caps text-primary bg-primary/10 px-3 py-1 rounded-full mb-1 border border-primary/20"
+                          >WAV 24/48</span
+                        >
+                        <span
+                          class="font-label-caps text-label-caps text-on-surface"
+                          >02:14 / 04:30</span
+                        >
+                      </div>
+                    </div>
+                    <!-- Waveform Player UI -->
+                    <div
+                      class="h-20 w-full flex items-center relative transition-opacity bg-deep-void/50 rounded-lg p-2 border border-outline-variant/30"
+                    >
+                      <!-- Progress Bar Layer -->
+                      <div class="absolute inset-x-2 flex items-center z-10">
+                        <div class="h-px bg-primary/20 w-full relative">
+                          <div
+                            class="absolute left-0 top-0 bottom-0 bg-primary w-[45%] shadow-[0_0_15px_rgba(212,175,55,0.8)]"
+                          ></div>
+                          <div
+                            class="absolute left-[45%] top-1/2 -translate-y-1/2 -translate-x-1/2 w-4 h-4 bg-primary rounded-full shadow-[0_0_15px_rgba(212,175,55,1)] border-2 border-deep-void"
+                          ></div>
+                        </div>
+                      </div>
+                      <!-- Abstract Waveform overlay (decorative) -->
+                      <svg
+                        class="absolute inset-0 w-full h-full mix-blend-screen pointer-events-none px-2"
+                        preserveaspectratio="none"
+                        viewbox="0 0 100 20"
+                      >
+                        <defs>
+                          <lineargradient
+                            id="wave-grad-1"
+                            x1="0%"
+                            x2="100%"
+                            y1="0%"
+                            y2="0%"
+                          >
+                            <stop
+                              offset="0%"
+                              stop-color="var(--tw-colors-primary)"
+                            ></stop>
+                            <stop
+                              offset="45%"
+                              stop-color="var(--tw-colors-primary)"
+                            ></stop>
+                            <stop
+                              offset="45%"
+                              stop-color="var(--tw-colors-outline-variant)"
+                            ></stop>
+                            <stop
+                              offset="100%"
+                              stop-color="var(--tw-colors-outline-variant)"
+                            ></stop>
+                          </lineargradient>
+                        </defs>
+                        <path
+                          class="drop-shadow-[0_0_4px_rgba(212,175,55,0.5)]"
+                          d="M0,10 L2,8 L4,12 L6,5 L8,15 L10,9 L12,11 L14,4 L16,16 L18,8 L20,12 L22,6 L24,14 L26,3 L28,17 L30,10 L32,8 L34,12 L36,7 L38,13 L40,5 L42,15 L44,9 L46,11 L48,6 L50,14 L52,4 L54,16 L56,8 L58,12 L60,7 L62,13 L64,5 L66,15 L68,9 L70,11 L72,6 L74,14 L76,4 L78,16 L80,8 L82,12 L84,7 L86,13 L88,5 L90,15 L92,9 L94,11 L96,6 L98,14 L100,10"
+                          fill="none"
+                          stroke="url(#wave-grad-1)"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Inactive Track 1 -->
+              <div
+                class="bg-surface-glass backdrop-blur-md border border-outline-variant/30 rounded-xl p-6 shadow-sm relative overflow-hidden group cursor-pointer transition-all hover:bg-surface-container-highest hover:border-outline-variant"
+              >
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                  <button
+                    class="w-14 h-14 rounded-full border border-outline-variant bg-surface-container flex items-center justify-center shrink-0 group-hover:border-primary group-hover:bg-primary/10 transition-all group-hover:shadow-[0_0_15px_rgba(212,175,55,0.2)]"
+                  >
+                    <span
+                      class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-2xl"
+                      style="font-variation-settings: 'FILL' 1"
+                      >play_arrow</span
+                    >
+                  </button>
+                  <div
+                    class="flex-grow flex flex-col min-w-0 w-full opacity-70 group-hover:opacity-100 transition-opacity"
+                  >
+                    <div class="flex justify-between items-center mb-3">
+                      <div class="flex flex-col min-w-0">
+                        <h4
+                          class="font-body-lg text-body-lg font-semibold text-on-surface truncate"
+                        >
+                          Analog Dreams
+                        </h4>
+                        <span
+                          class="font-body-md text-body-md text-on-surface-variant truncate"
+                          >Artist Name</span
+                        >
+                      </div>
+                      <span
+                        class="font-label-caps text-label-caps text-on-surface-variant shrink-0 bg-surface-container-highest px-3 py-1 rounded"
+                        >05:12</span
+                      >
+                    </div>
+                    <!-- Static flat waveform -->
+                    <div
+                      class="h-10 w-full flex items-center relative bg-deep-void/30 rounded p-1"
+                    >
+                      <svg
+                        class="w-full h-full text-outline-variant/50"
+                        preserveaspectratio="none"
+                        viewbox="0 0 100 20"
+                      >
+                        <path
+                          d="M0,10 L3,8 L6,12 L9,7 L12,13 L15,5 L18,15 L21,9 L24,11 L27,6 L30,14 L33,4 L36,16 L39,8 L42,12 L45,7 L48,13 L51,5 L54,15 L57,9 L60,11 L63,6 L66,14 L69,4 L72,16 L75,8 L78,12 L81,7 L84,13 L87,5 L90,15 L93,9 L96,11 L99,10"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Inactive Track 2 -->
+              <div
+                class="bg-surface-glass backdrop-blur-md border border-outline-variant/30 rounded-xl p-6 shadow-sm relative overflow-hidden group cursor-pointer transition-all hover:bg-surface-container-highest hover:border-outline-variant"
+              >
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                  <button
+                    class="w-14 h-14 rounded-full border border-outline-variant bg-surface-container flex items-center justify-center shrink-0 group-hover:border-primary group-hover:bg-primary/10 transition-all group-hover:shadow-[0_0_15px_rgba(212,175,55,0.2)]"
+                  >
+                    <span
+                      class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-2xl"
+                      style="font-variation-settings: 'FILL' 1"
+                      >play_arrow</span
+                    >
+                  </button>
+                  <div
+                    class="flex-grow flex flex-col min-w-0 w-full opacity-70 group-hover:opacity-100 transition-opacity"
+                  >
+                    <div class="flex justify-between items-center mb-3">
+                      <div class="flex flex-col min-w-0">
+                        <h4
+                          class="font-body-lg text-body-lg font-semibold text-on-surface truncate"
+                        >
+                          Subsonic Bassline
+                        </h4>
+                        <span
+                          class="font-body-md text-body-md text-on-surface-variant truncate"
+                          >Artist Name</span
+                        >
+                      </div>
+                      <span
+                        class="font-label-caps text-label-caps text-on-surface-variant shrink-0 bg-surface-container-highest px-3 py-1 rounded"
+                        >03:45</span
+                      >
+                    </div>
+                    <div
+                      class="h-10 w-full flex items-center relative bg-deep-void/30 rounded p-1"
+                    >
+                      <svg
+                        class="w-full h-full text-outline-variant/50"
+                        preserveaspectratio="none"
+                        viewbox="0 0 100 20"
+                      >
+                        <path
+                          d="M0,10 L4,2 L8,18 L12,10 L16,5 L20,15 L24,10 L28,2 L32,18 L36,10 L40,10 L44,5 L48,15 L52,10 L56,2 L60,18 L64,10 L68,5 L72,15 L76,10 L80,2 L84,18 L88,10 L92,5 L96,15 L100,10"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- External Links Section -->
+          <div
+            class="mt-16 bg-surface-glass backdrop-blur-xl rounded-2xl p-8 lg:p-12 border border-border-glow flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden"
+          >
+            <!-- Decorative gradient -->
+            <div
+              class="absolute -top-24 -right-24 w-64 h-64 bg-secondary-container/20 rounded-full blur-[80px] pointer-events-none"
+            ></div>
+            <div
+              class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/10 rounded-full blur-[80px] pointer-events-none"
+            ></div>
+            <div class="flex flex-col gap-2 z-10 text-center md:text-left">
+              <h3 class="font-headline-md text-headline-md text-on-surface">
+                Available Everywhere
+              </h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Stream in lossless high-fidelity on your preferred platform.
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 z-10 w-full md:w-auto">
+              <a
+                class="px-6 py-4 rounded-xl bg-surface-container-lowest/80 backdrop-blur border border-outline-variant flex items-center gap-3 hover:border-primary hover:bg-surface-variant transition-all hover:shadow-[0_0_20px_rgba(212,175,55,0.1)] justify-center group"
+                href="#"
+              >
+                <span
+                  class="material-symbols-outlined text-secondary-fixed group-hover:scale-110 transition-transform"
+                  >graphic_eq</span
+                >
+                <span
+                  class="font-label-caps text-label-caps text-on-surface uppercase"
+                  >Spotify</span
+                >
+              </a>
+              <a
+                class="px-6 py-4 rounded-xl bg-surface-container-lowest/80 backdrop-blur border border-outline-variant flex items-center gap-3 hover:border-error hover:bg-surface-variant transition-all hover:shadow-[0_0_20px_rgba(255,180,171,0.1)] justify-center group"
+                href="#"
+              >
+                <span
+                  class="material-symbols-outlined text-error group-hover:scale-110 transition-transform"
+                  >music_note</span
+                >
+                <span
+                  class="font-label-caps text-label-caps text-on-surface uppercase"
+                  >Apple Music</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-lowest py-safe-area border-t border-outline-variant/10"
+    >
+      <div
+        class="w-full px-safe-area flex flex-col md:flex-row justify-between items-center gap-gutter-md"
+      >
+        <div class="flex flex-col gap-unit">
+          <div class="font-headline-md text-on-surface">Studio Aesthetic</div>
+          <p class="text-on-surface-variant font-body-md">
+            Professional sound engineering for modern artists.
+          </p>
+        </div>
+        <div class="flex gap-gutter-md">
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors"
+            href="#"
+            ><span class="material-symbols-outlined">share</span></a
+          ><a
+            class="text-on-surface-variant hover:text-primary transition-colors"
+            href="#"
+            ><span class="material-symbols-outlined">podcasts</span></a
+          ><a
+            class="text-on-surface-variant hover:text-primary transition-colors"
+            href="#"
+            ><span class="material-symbols-outlined">headphones</span></a
+          >
+        </div>
+      </div>
+      <div
+        class="w-full px-safe-area mt-gutter-md pt-gutter-md border-t border-outline-variant/5 text-on-tertiary-container font-label-caps text-center md:text-left"
+      >
+        © 2024 Sonic Precision Studio. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

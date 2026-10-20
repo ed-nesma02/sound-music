@@ -1,0 +1,594 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-background bg-grain font-body-md text-on-surface">
+    <header
+      class="fixed top-0 w-full z-50 bg-surface-glass backdrop-blur-2xl border-b border-border-glow shadow-[0_4px_24px_rgba(0,0,0,0.4)]"
+    >
+      <div
+        class="h-20 w-full px-safe-area md:px-margin-xl flex items-center justify-between"
+      >
+        <div class="flex items-center gap-unit">
+          <img
+            alt="Sonic Precision Logo"
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoggLBv3pA14YNcMcbBTmJYSub-KUnmS3cLwuKFS6Q1yDZQVrXmpzddCWHZEpOhJuF3kkx3yIsb16LJ8MzSgDvARFzHf1FD-3zxYcJ2J35XDaja0QNGxdIo9gqZ8MLndxHYrxlwyFnMVX6P09FTNzBJ4WkYHvfSB6yf_7HJ95HMgohzISE-ThY_59uW3U_A2-XwsmwNrrs-c-pwmuxb7roGRa8l9gA6rwUno0Y46cyZ3uo27M-vIg"
+          />
+          <span
+            class="font-headline-md text-primary tracking-tighter uppercase"
+          >
+            Sonic Precision
+          </span>
+        </div>
+
+        <nav
+          class="hidden md:flex items-center gap-gutter-md"
+          data-active-classes="text-primary font-bold"
+        >
+          <a
+            aria-current="page"
+            class="transition-all uppercase text-primary font-bold font-label-caps"
+            data-path="home"
+            href="./index.html"
+          >
+            Главная
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="portfolio"
+            href="./portfolio.html"
+          >
+            Работы
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="player"
+            href="./tracks.html"
+          >
+            Треки
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="services"
+            href="./services.html"
+          >
+            Услуги
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="order"
+            href="./order.html"
+          >
+            Заказ
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="w-full pt-20 min-h-screen relative z-10">
+      <div class="flex flex-col w-full gap-[120px] pb-margin-xl">
+        <!-- Hero Section -->
+        <section
+          class="relative w-full h-[819px] min-h-[700px] flex items-center justify-center -mt-20 pt-20 overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 w-full h-full bg-cover bg-center mix-blend-luminosity opacity-40"
+            data-alt="A highly atmospheric, dark macro photography shot of an analog audio mixing console. Focusing on a silver fader knob pushed to the maximum. Shallow depth of field, with soft cyan and bright lime green LED lights glowing faintly in the blurred background. The overall tone is cinematic, technical, premium, and moody. Deep blacks and subtle metallic reflections."
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmbalNBAZinZUgBFjvCaywHJyJi7dJeLAObXnsNp7SiQwRdwhnIp__zyT-N4nACW3dRuLEKd2j7wR1kUWYlY9xXavNaogxOR7pam0psQdIyqwV2wUm1zR9WYMmEKhHGsZJhXHcMH3O58bKnEVwHkjgRg-d2kObrhXYEHAUcn0VY1yEHtDgD6XWtlm53eG9Zh84kntsZWy6Rcji1zhxJSRxcaDzMtMZBJCIuCbJ3Xn_koBPMlEsfU4');
+            "
+          ></div>
+          <div
+            class="absolute inset-0 bg-gradient-to-tr from-background via-background/80 to-primary-container/10 z-10"
+          ></div>
+          <div
+            class="absolute top-1/4 right-1/4 w-96 h-96 bg-primary-container/20 rounded-full blur-[120px] mix-blend-screen z-10"
+          ></div>
+          <div
+            class="relative z-20 w-full max-w-7xl mx-auto px-safe-area md:px-margin-xl flex flex-col items-center text-center gap-8"
+          >
+            <div
+              class="flex flex-col items-center gap-4 mb-4 opacity-0 translate-y-8 animate-[fadeUp_1s_ease-out_forwards]"
+            >
+              <div
+                class="h-12 w-px bg-gradient-to-b from-transparent to-primary"
+              ></div>
+              <span
+                class="font-label-caps text-label-caps text-primary uppercase tracking-widest px-4 py-2 bg-primary/10 rounded-full border border-primary/20 backdrop-blur-md"
+                >Premium Audio Engineering</span
+              >
+            </div>
+            <h1
+              class="font-display-lg text-display-lg text-on-surface max-w-5xl opacity-0 translate-y-8 animate-[fadeUp_1s_ease-out_0.2s_forwards] drop-shadow-2xl"
+            >
+              Идеальный звук <br />
+              для ваших идей
+            </h1>
+            <p
+              class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-4 opacity-0 translate-y-8 animate-[fadeUp_1s_ease-out_0.4s_forwards]"
+            >
+              Сведение, мастеринг и саунд-дизайн мирового уровня. Мы превращаем
+              сырые записи в коммерчески успешные релизы, сохраняя вашу
+              творческую идентичность.
+            </p>
+            <div
+              class="mt-8 flex flex-col sm:flex-row items-center gap-8 opacity-0 translate-y-8 animate-[fadeUp_1s_ease-out_0.6s_forwards]"
+            >
+              <button
+                class="bg-primary text-on-primary font-headline-md text-body-md px-8 py-4 rounded-full hover:bg-primary-fixed-dim hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all active:scale-95 flex items-center gap-3 relative group overflow-hidden"
+              >
+                <span class="relative z-10">Смотреть работы</span>
+                <span
+                  class="material-symbols-outlined relative z-10 group-hover:translate-x-1 transition-transform"
+                  >arrow_forward</span
+                >
+              </button>
+              <div
+                class="flex gap-2 p-4 rounded-full bg-surface-glass backdrop-blur-md border border-border-glow"
+              >
+                <div
+                  class="w-1.5 h-6 bg-secondary-container rounded-full animate-[pulse_1s_ease-in-out_infinite]"
+                ></div>
+                <div
+                  class="w-1.5 h-10 bg-secondary-container rounded-full animate-[pulse_1.2s_ease-in-out_infinite_0.2s]"
+                ></div>
+                <div
+                  class="w-1.5 h-4 bg-secondary-container rounded-full animate-[pulse_0.8s_ease-in-out_infinite_0.4s]"
+                ></div>
+                <div
+                  class="w-1.5 h-8 bg-primary rounded-full animate-[pulse_1.5s_ease-in-out_infinite_0.1s]"
+                ></div>
+                <div
+                  class="w-1.5 h-5 bg-primary rounded-full animate-[pulse_1.1s_ease-in-out_infinite_0.3s]"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Brief About -->
+        <section
+          class="w-full max-w-7xl mx-auto px-safe-area md:px-margin-xl relative"
+        >
+          <div
+            class="absolute top-0 right-margin-xl w-[400px] h-[400px] bg-primary-container/10 rounded-full blur-[100px] -z-10 mix-blend-screen pointer-events-none"
+          ></div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-12 gap-gutter-md items-center"
+          >
+            <div class="md:col-span-5 relative group">
+              <div
+                class="absolute inset-0 bg-gradient-to-tr from-secondary-container/30 to-primary-container/30 rounded-xl blur-2xl group-hover:blur-3xl transition-all duration-500 opacity-60"
+              ></div>
+              <img
+                class="relative w-full aspect-[4/5] object-cover rounded-xl shadow-2xl z-10 border border-border-glow"
+                data-alt="A portrait of a focused sound engineer in a dimly lit studio. He is wearing high-end studio headphones and looking thoughtfully at a multi-screen setup displaying digital audio workstation (DAW) software. Subtle rim lighting highlights his profile. Dark, moody, and highly professional atmosphere."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnRihJsir5L6UtUa_PVI383VhyclUu-gG7U5s260kl0sSqnQmqaDgsSiHleW4vkPKsEvNFDCLRDFa_RPaq0USoCV5UyDZi1WtZi_EDIGiNZTWfDNkxJu3Td7S7UCO2rqS3ZwujRex8X0Al4bCd2h46DF-7Nmr-IDd_U_DNo87CR7A6He-0X_htRbBXa_7HcoJIS6n7DLH5X0ugNsjM9qliPdA7xwa8yNGmQ0TuFvVSoU36l-q6-t8"
+              />
+              <div
+                class="absolute -bottom-6 -right-6 bg-surface-glass backdrop-blur-xl p-6 rounded-xl shadow-2xl z-20 border border-border-glow flex items-center gap-4 hover:-translate-y-2 transition-transform"
+              >
+                <div
+                  class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center border border-primary/30 shadow-[0_0_15px_rgba(212,175,55,0.2)]"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    style="font-variation-settings: 'FILL' 1"
+                    >verified</span
+                  >
+                </div>
+                <div>
+                  <div class="font-display-lg text-headline-lg text-on-surface">
+                    15+
+                  </div>
+                  <div
+                    class="font-label-caps text-label-caps text-on-surface-variant uppercase"
+                  >
+                    Лет Опыта
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="md:col-span-6 md:col-start-7 flex flex-col gap-8 mt-12 md:mt-0"
+            >
+              <div>
+                <h2
+                  class="font-display-lg text-headline-lg md:text-display-lg text-on-surface mb-6 leading-tight"
+                >
+                  Точность в <br />
+                  <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-fixed"
+                    >каждом децибеле.</span
+                  >
+                </h2>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant mb-4"
+                >
+                  Sonic Precision — это не просто студия. Это философия
+                  бескомпромиссного качества. Мы специализируемся на создании
+                  плотного, динамичного и кристально чистого микса, который
+                  звучит идеально на любой акустической системе.
+                </p>
+                <p class="font-body-md text-body-md text-on-surface-variant/80">
+                  Используя гибридный подход, мы объединяем тепло аналогового
+                  оборудования с хирургической точностью цифровой обработки. Ваш
+                  звук заслуживает профессионального отношения.
+                </p>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div
+                  class="bg-surface-glass backdrop-blur-lg p-6 rounded-xl border border-border-glow hover:border-primary/50 transition-colors hover:bg-surface-container/80"
+                >
+                  <div
+                    class="font-label-caps text-label-caps text-primary mb-2 uppercase tracking-wider flex items-center gap-2"
+                  >
+                    <span class="material-symbols-outlined text-sm">cable</span>
+                    Оборудование
+                  </div>
+                  <div class="font-headline-md text-body-md text-on-surface">
+                    SSL, Neve, Universal Audio
+                  </div>
+                </div>
+                <div
+                  class="bg-surface-glass backdrop-blur-lg p-6 rounded-xl border border-border-glow hover:border-secondary-container/50 transition-colors hover:bg-surface-container/80"
+                >
+                  <div
+                    class="font-label-caps text-label-caps text-secondary-fixed mb-2 uppercase tracking-wider flex items-center gap-2"
+                  >
+                    <span class="material-symbols-outlined text-sm"
+                      >speaker</span
+                    >
+                    Мониторинг
+                  </div>
+                  <div class="font-headline-md text-body-md text-on-surface">
+                    ATC SCM50A Pro
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Featured Services -->
+        <section class="w-full max-w-7xl mx-auto px-safe-area md:px-margin-xl">
+          <div
+            class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+          >
+            <div>
+              <span
+                class="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-widest mb-4 block flex items-center gap-2"
+                ><div class="w-8 h-px bg-secondary-fixed"></div>
+                Экспертиза</span
+              >
+              <h2
+                class="font-display-lg text-headline-lg md:text-display-lg text-on-surface"
+              >
+                Услуги Студии
+              </h2>
+            </div>
+            <a
+              class="font-label-caps text-body-md text-primary hover:text-primary-fixed-dim transition-colors flex items-center gap-2 group bg-primary/5 px-6 py-3 rounded-full border border-primary/20 backdrop-blur-sm"
+              href="./services.html"
+            >
+              Все услуги
+              <span
+                class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-md">
+            <!-- Service 1 -->
+            <div
+              class="group relative bg-surface-glass backdrop-blur-xl rounded-2xl p-8 overflow-hidden transition-all duration-500 hover:-translate-y-4 hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)] z-10 border border-border-glow"
+            >
+              <div
+                class="absolute top-0 right-0 w-48 h-48 bg-primary-container/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-primary-container/20 transition-colors -z-10"
+              ></div>
+              <div
+                class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mb-8 border border-outline-variant/30 group-hover:border-primary/50 group-hover:shadow-[0_0_20px_rgba(212,175,55,0.2)] transition-all relative"
+              >
+                <span
+                  class="material-symbols-outlined text-primary text-3xl z-10"
+                  style="font-variation-settings: 'FILL' 1"
+                  >tune</span
+                >
+              </div>
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-4 group-hover:text-primary transition-colors"
+              >
+                Сведение
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-3"
+              >
+                Баланс, эквализация, компрессия и пространственная обработка.
+                Создание широкого, глубокого и панчевого микса из мультитрека.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-4 py-1.5 bg-surface-container-highest/50 text-on-surface-variant font-label-caps text-label-caps rounded-full border border-outline-variant/30 backdrop-blur-md"
+                  >Stem-сведение</span
+                >
+                <span
+                  class="px-4 py-1.5 bg-surface-container-highest/50 text-on-surface-variant font-label-caps text-label-caps rounded-full border border-outline-variant/30 backdrop-blur-md"
+                  >Вокальный продакшн</span
+                >
+              </div>
+            </div>
+            <!-- Service 2 -->
+            <div
+              class="group relative bg-surface-glass backdrop-blur-xl rounded-2xl p-8 overflow-hidden transition-all duration-500 hover:-translate-y-4 hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)] z-10 border border-border-glow"
+            >
+              <div
+                class="absolute top-0 right-0 w-48 h-48 bg-secondary-container/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-secondary-container/20 transition-colors -z-10"
+              ></div>
+              <div
+                class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mb-8 border border-outline-variant/30 group-hover:border-secondary-fixed/50 group-hover:shadow-[0_0_20px_rgba(212,175,55,0.2)] transition-all relative"
+              >
+                <span
+                  class="material-symbols-outlined text-secondary-fixed text-3xl z-10"
+                  style="font-variation-settings: 'FILL' 1"
+                  >graphic_eq</span
+                >
+              </div>
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-4 group-hover:text-secondary-fixed transition-colors"
+              >
+                Мастеринг
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-3"
+              >
+                Финальная полировка трека. Подготовка под стандарты стриминговых
+                платформ (Loudness Penalty), обеспечение совместимости и
+                громкости.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-4 py-1.5 bg-surface-container-highest/50 text-on-surface-variant font-label-caps text-label-caps rounded-full border border-outline-variant/30 backdrop-blur-md"
+                  >Apple Digital Masters</span
+                >
+                <span
+                  class="px-4 py-1.5 bg-surface-container-highest/50 text-on-surface-variant font-label-caps text-label-caps rounded-full border border-outline-variant/30 backdrop-blur-md"
+                  >Vinyl Prep</span
+                >
+              </div>
+            </div>
+            <!-- Service 3 -->
+            <div
+              class="group relative bg-surface-glass backdrop-blur-xl rounded-2xl p-8 overflow-hidden transition-all duration-500 hover:-translate-y-4 hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)] z-10 border border-border-glow"
+            >
+              <div
+                class="absolute top-0 right-0 w-48 h-48 bg-primary-container/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-primary-container/20 transition-colors -z-10"
+              ></div>
+              <div
+                class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mb-8 border border-outline-variant/30 group-hover:border-primary/50 group-hover:shadow-[0_0_20px_rgba(212,175,55,0.2)] transition-all relative"
+              >
+                <span
+                  class="material-symbols-outlined text-primary text-3xl z-10"
+                  style="font-variation-settings: 'FILL' 1"
+                  >waves</span
+                >
+              </div>
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-4 group-hover:text-primary transition-colors"
+              >
+                Саунд-дизайн
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-3"
+              >
+                Создание уникальных звуковых текстур, синтез, фоли и аудио для
+                медиа (кино, игры, реклама). Индивидуальный звуковой почерк.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-4 py-1.5 bg-surface-container-highest/50 text-on-surface-variant font-label-caps text-label-caps rounded-full border border-outline-variant/30 backdrop-blur-md"
+                  >Синтез</span
+                >
+                <span
+                  class="px-4 py-1.5 bg-surface-container-highest/50 text-on-surface-variant font-label-caps text-label-caps rounded-full border border-outline-variant/30 backdrop-blur-md"
+                  >Foley</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Testimonials (Vertical Column) -->
+        <section
+          class="w-full max-w-4xl mx-auto px-safe-area md:px-0 relative mb-20 mt-10"
+        >
+          <div
+            class="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-primary/30 to-transparent shadow-[0_0_10px_rgba(212,175,55,0.3)]"
+          ></div>
+          <div class="pl-8 md:pl-16 relative">
+            <div class="mb-16">
+              <span
+                class="font-label-caps text-label-caps text-primary uppercase tracking-widest block mb-4 flex items-center gap-2"
+                ><span class="material-symbols-outlined text-sm">forum</span>
+                Отзывы Клиентов</span
+              >
+              <h2
+                class="font-display-lg text-headline-lg md:text-display-lg text-on-surface"
+              >
+                Что говорят артисты
+              </h2>
+            </div>
+            <div class="flex flex-col gap-12 relative">
+              <!-- Testimonial 1 -->
+              <div
+                class="relative group bg-surface-glass backdrop-blur-lg p-8 rounded-2xl border border-border-glow hover:bg-surface-container/60 transition-colors"
+              >
+                <div
+                  class="absolute -left-[41px] md:-left-[73px] top-8 w-5 h-5 bg-background border-[3px] border-primary rounded-full group-hover:scale-125 group-hover:bg-primary transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.6)]"
+                ></div>
+                <div class="flex gap-1 mb-6">
+                  <span
+                    class="material-symbols-outlined text-tertiary-fixed text-sm drop-shadow-[0_0_5px_rgba(255,225,108,0.5)]"
+                    style="font-variation-settings: 'FILL' 1"
+                    >star</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-tertiary-fixed text-sm drop-shadow-[0_0_5px_rgba(255,225,108,0.5)]"
+                    style="font-variation-settings: 'FILL' 1"
+                    >star</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-tertiary-fixed text-sm drop-shadow-[0_0_5px_rgba(255,225,108,0.5)]"
+                    style="font-variation-settings: 'FILL' 1"
+                    >star</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-tertiary-fixed text-sm drop-shadow-[0_0_5px_rgba(255,225,108,0.5)]"
+                    style="font-variation-settings: 'FILL' 1"
+                    >star</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-tertiary-fixed text-sm drop-shadow-[0_0_5px_rgba(255,225,108,0.5)]"
+                    style="font-variation-settings: 'FILL' 1"
+                    >star</span
+                  >
+                </div>
+                <p
+                  class="font-headline-md text-body-lg md:text-headline-md text-on-surface mb-8 italic leading-relaxed font-light"
+                >
+                  "Мой альбом зазвучал совершенно по-новому. Плотный низ,
+                  прозрачный верх и невероятная ширина. Профессионализм на
+                  каждом этапе."
+                </p>
+                <div class="flex items-center gap-4">
+                  <img
+                    class="w-14 h-14 rounded-full object-cover border-2 border-primary/40 shadow-[0_0_15px_rgba(212,175,55,0.2)]"
+                    data-alt="Small avatar portrait of an electronic music producer, male, wearing a beanie, dark background with subtle neon lighting."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy02TUmfVYCB0A2F4FovmJmpPWft6jSqcVH_41NS-jwjhjBtARg0aAI7Hd3w9a4Kz80Zafm820kE2ovcvuB551Sx8mxgLNC-GXtslDGNfwxURRxD21PBOlLuLlAdxpVSIc2Uoxug08S0O3jop5kjnm5jRDm46h51-4liUfpUlHCxRBJnKxr7d3HleJuuE16jV26nOW6JI-7Wy_Oufa1UxR_2x-QdTLks984AtjIbOYucVvGCUhrcA"
+                  />
+                  <div>
+                    <div
+                      class="font-headline-md text-body-md text-on-surface font-bold"
+                    >
+                      Алексей В.
+                    </div>
+                    <div
+                      class="font-label-caps text-label-caps text-primary uppercase mt-1"
+                    >
+                      Электронный Продюсер
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div
+                class="relative group bg-surface-glass backdrop-blur-lg p-8 rounded-2xl border border-border-glow hover:bg-surface-container/60 transition-colors"
+              >
+                <div
+                  class="absolute -left-[41px] md:-left-[73px] top-8 w-5 h-5 bg-background border-[3px] border-secondary-container rounded-full group-hover:scale-125 group-hover:bg-secondary-container transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.6)]"
+                ></div>
+                <div class="flex gap-1 mb-6">
+                  <span
+                    class="material-symbols-outlined text-tertiary-fixed text-sm drop-shadow-[0_0_5px_rgba(255,225,108,0.5)]"
+                    style="font-variation-settings: 'FILL' 1"
+                    >star</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-tertiary-fixed text-sm drop-shadow-[0_0_5px_rgba(255,225,108,0.5)]"
+                    style="font-variation-settings: 'FILL' 1"
+                    >star</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-tertiary-fixed text-sm drop-shadow-[0_0_5px_rgba(255,225,108,0.5)]"
+                    style="font-variation-settings: 'FILL' 1"
+                    >star</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-tertiary-fixed text-sm drop-shadow-[0_0_5px_rgba(255,225,108,0.5)]"
+                    style="font-variation-settings: 'FILL' 1"
+                    >star</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-tertiary-fixed text-sm drop-shadow-[0_0_5px_rgba(255,225,108,0.5)]"
+                    style="font-variation-settings: 'FILL' 1"
+                    >star</span
+                  >
+                </div>
+                <p
+                  class="font-headline-md text-body-lg md:text-headline-md text-on-surface mb-8 italic leading-relaxed font-light"
+                >
+                  "Идеальный баланс между технической точностью и художественным
+                  видением. Вокал сел в микс как влитой. Настоятельно
+                  рекомендую!"
+                </p>
+                <div class="flex items-center gap-4">
+                  <img
+                    class="w-14 h-14 rounded-full object-cover border-2 border-secondary-container/40 shadow-[0_0_15px_rgba(212,175,55,0.2)]"
+                    data-alt="Small avatar portrait of a female indie pop singer, stylish makeup, soft studio lighting."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxQgHmW7kysdzWaoE8uYMngAEjLdo1CN_aDte8kixL-wiuS5D9KG-x3g4BP3KPD_rj5M3x5eu_W5-S4w6i3l30DYDGf1UpsF70nUfh-tWbLJJ5M-AkABfP6Y0DKDg31LRzWhCxXSUpXT8dG23myRUUHO4NOU8ETCDdVBu_Q8wZQ4z3959QVmPaQcG1VbxbAosobOc5RCoeKTeGnJQrKIVI2kOkU6kJN3hFzG3eYfeLS_R7SUh9VZU"
+                  />
+                  <div>
+                    <div
+                      class="font-headline-md text-body-md text-on-surface font-bold"
+                    >
+                      Мария С.
+                    </div>
+                    <div
+                      class="font-label-caps text-label-caps text-secondary-fixed uppercase mt-1"
+                    >
+                      Инди-Поп Исполнительница
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <style>
+        @keyframes fadeUp {
+          0% {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      </style>
+    </main>
+    <footer
+      class="w-full bg-surface-container-lowest/80 backdrop-blur-xl py-margin-xl border-t border-border-glow relative z-10"
+    >
+      <div
+        class="w-full px-safe-area md:px-margin-xl flex flex-col md:flex-row justify-between items-center gap-gutter-md"
+      >
+        <div class="flex flex-col gap-unit">
+          <div class="font-headline-md text-on-surface">Studio Aesthetic</div>
+          <p class="text-on-surface-variant font-body-md">
+            Professional sound engineering for modern artists.
+          </p>
+        </div>
+        <div class="flex gap-gutter-md">
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors hover:scale-110 transform duration-200"
+            href="#"
+            ><span class="material-symbols-outlined">share</span></a
+          ><a
+            class="text-on-surface-variant hover:text-primary transition-colors hover:scale-110 transform duration-200"
+            href="#"
+            ><span class="material-symbols-outlined">podcasts</span></a
+          ><a
+            class="text-on-surface-variant hover:text-primary transition-colors hover:scale-110 transform duration-200"
+            href="#"
+            ><span class="material-symbols-outlined">headphones</span></a
+          >
+        </div>
+      </div>
+      <div
+        class="w-full px-safe-area md:px-margin-xl mt-gutter-md pt-gutter-md border-t border-border-glow/50 text-outline font-label-caps text-center md:text-left tracking-widest"
+      >
+        © 2024 Sonic Precision Studio. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

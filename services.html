@@ -1,0 +1,568 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-background font-body-md text-on-surface">
+    <header
+      class="fixed top-0 w-full z-50 bg-surface-glass backdrop-blur-2xl border-b border-border-glow shadow-[0_4px_24px_rgba(0,0,0,0.4)]"
+    >
+      <div
+        class="h-20 w-full px-safe-area md:px-margin-xl flex items-center justify-between"
+      >
+        <div class="flex items-center gap-unit">
+          <img
+            alt="Sonic Precision Logo"
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoggLBv3pA14YNcMcbBTmJYSub-KUnmS3cLwuKFS6Q1yDZQVrXmpzddCWHZEpOhJuF3kkx3yIsb16LJ8MzSgDvARFzHf1FD-3zxYcJ2J35XDaja0QNGxdIo9gqZ8MLndxHYrxlwyFnMVX6P09FTNzBJ4WkYHvfSB6yf_7HJ95HMgohzISE-ThY_59uW3U_A2-XwsmwNrrs-c-pwmuxb7roGRa8l9gA6rwUno0Y46cyZ3uo27M-vIg"
+          />
+          <span
+            class="font-headline-md text-primary tracking-tighter uppercase"
+          >
+            Sonic Precision
+          </span>
+        </div>
+
+        <nav
+          class="hidden md:flex items-center gap-gutter-md"
+          data-active-classes="text-primary font-bold"
+        >
+          <a
+            aria-current="page"
+            class="transition-all uppercase text-primary font-bold font-label-caps"
+            data-path="home"
+            href="./index.html"
+          >
+            Главная
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="portfolio"
+            href="./portfolio.html"
+          >
+            Работы
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="player"
+            href="./tracks.html"
+          >
+            Треки
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="services"
+            href="./services.html"
+          >
+            Услуги
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="order"
+            href="./order.html"
+          >
+            Заказ
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="w-full pt-20 min-h-screen">
+      <div
+        class="flex flex-col w-full font-body-md text-on-surface bg-background"
+      >
+        <section class="relative w-full overflow-hidden pb-margin-xl">
+          <div class="absolute inset-0 bg-surface-container-low/80 z-0"></div>
+          <div
+            class="absolute inset-0 z-0 opacity-20 pointer-events-none"
+            style="
+              background-image:
+                radial-gradient(
+                  circle at 20% 50%,
+                  var(--primary) 0%,
+                  transparent 50%
+                ),
+                radial-gradient(
+                  circle at 80% 80%,
+                  var(--secondary) 0%,
+                  transparent 50%
+                );
+              filter: blur(100px);
+            "
+          ></div>
+          <div
+            class="relative z-10 container mx-auto px-safe-area mt-margin-xl md:mt-[120px] mb-margin-xl"
+          >
+            <div class="flex flex-col gap-unit max-w-3xl">
+              <h1 class="font-display-lg text-display-lg text-on-surface">
+                Precision Engineered
+                <span class="text-primary italic">Sound.</span>
+              </h1>
+              <p
+                class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-gutter-md"
+              >
+                Professional audio services designed for artists demanding
+                clarity, depth, and competitive loudness. Our meticulous process
+                ensures your vision translates flawlessly across all playback
+                systems.
+              </p>
+            </div>
+            <div
+              class="mt-margin-xl flex gap-gutter-md items-center overflow-x-auto pb-4 hide-scrollbar"
+            >
+              <div
+                class="flex items-center gap-2 whitespace-nowrap bg-surface-variant/40 px-4 py-2 rounded-full backdrop-blur-md"
+              >
+                <span
+                  class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_10px_var(--secondary)] animate-pulse"
+                ></span>
+                <span
+                  class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest"
+                  >Analog Summing</span
+                >
+              </div>
+              <div
+                class="flex items-center gap-2 whitespace-nowrap bg-surface-variant/40 px-4 py-2 rounded-full backdrop-blur-md"
+              >
+                <span
+                  class="w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_var(--primary)]"
+                ></span>
+                <span
+                  class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest"
+                  >Digital Precision</span
+                >
+              </div>
+              <div
+                class="flex items-center gap-2 whitespace-nowrap bg-surface-variant/40 px-4 py-2 rounded-full backdrop-blur-md"
+              >
+                <span
+                  class="w-2 h-2 rounded-full bg-error shadow-[0_0_10px_var(--error)]"
+                ></span>
+                <span
+                  class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest"
+                  >Stem Mastering</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full relative z-20 -mt-16 pb-margin-xl">
+          <div class="container mx-auto px-safe-area">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-md">
+              <div
+                class="group relative bg-surface-glass backdrop-blur-2xl border border-white/5 rounded-2xl overflow-hidden shadow-2xl hover:shadow-[0_0_40px_rgba(212,175,55,0.15)] transition-all duration-500 hover:-translate-y-2"
+              >
+                <div
+                  class="absolute top-0 left-0 w-full h-1 bg-surface-variant group-hover:bg-primary transition-colors"
+                ></div>
+                <div class="p-gutter-md h-full flex flex-col relative z-10">
+                  <div class="mb-gutter-md flex justify-between items-start">
+                    <h2
+                      class="font-headline-lg text-headline-lg text-on-surface"
+                    >
+                      Mixing
+                    </h2>
+                    <span
+                      class="font-label-caps text-label-caps text-on-surface-variant uppercase bg-surface-variant/50 border border-white/5 px-3 py-1 rounded-full"
+                      >Сведение</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-margin-xl flex-grow"
+                  >
+                    Transform your raw tracks into a cohesive, dynamic, and
+                    expansive mix. We focus on frequency balance, spatial
+                    positioning, and emotional impact.
+                  </p>
+                  <div
+                    class="space-y-4 mb-margin-xl font-body-md text-body-md text-on-surface-variant"
+                  >
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary text-sm"
+                          style="font-variation-settings: 'FILL' 1"
+                          >check</span
+                        >
+                      </div>
+                      <span>Up to 48 Stems</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary text-sm"
+                          style="font-variation-settings: 'FILL' 1"
+                          >check</span
+                        >
+                      </div>
+                      <span>Vocal Tuning &amp; Timing</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary text-sm"
+                          style="font-variation-settings: 'FILL' 1"
+                          >check</span
+                        >
+                      </div>
+                      <span>Analog &amp; Digital Processing</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary text-sm"
+                          style="font-variation-settings: 'FILL' 1"
+                          >check</span
+                        >
+                      </div>
+                      <span>3 Revisions Included</span>
+                    </div>
+                  </div>
+                  <div
+                    class="mt-auto border-t border-outline-variant/30 pt-gutter-md flex justify-between items-end"
+                  >
+                    <div>
+                      <span
+                        class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1"
+                        >Turnaround</span
+                      >
+                      <span
+                        class="font-headline-md text-headline-md text-on-surface"
+                        >5-7
+                        <span class="text-xl text-on-surface-variant"
+                          >Days</span
+                        ></span
+                      >
+                    </div>
+                    <div class="text-right">
+                      <span
+                        class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1"
+                        >Starting From</span
+                      >
+                      <span
+                        class="font-headline-md text-headline-md text-primary"
+                        >$350</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="group relative bg-surface-glass backdrop-blur-2xl border border-white/5 rounded-2xl overflow-hidden shadow-2xl hover:shadow-[0_0_40px_rgba(212,175,55,0.15)] transition-all duration-500 md:-translate-y-8 hover:-translate-y-10"
+              >
+                <div
+                  class="absolute top-0 left-0 w-full h-1 bg-surface-variant group-hover:bg-primary transition-colors"
+                ></div>
+                <div class="p-gutter-md h-full flex flex-col relative z-10">
+                  <div class="mb-gutter-md flex justify-between items-start">
+                    <h2
+                      class="font-headline-lg text-headline-lg text-on-surface"
+                    >
+                      Mastering
+                    </h2>
+                    <span
+                      class="font-label-caps text-label-caps text-on-surface-variant uppercase bg-surface-variant/50 border border-white/5 px-3 py-1 rounded-full"
+                      >Мастеринг</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-margin-xl flex-grow"
+                  >
+                    The final polish. We optimize loudness, enhance stereo
+                    width, and ensure translation across all platforms,
+                    delivering competitive streaming-ready files.
+                  </p>
+                  <div
+                    class="space-y-4 mb-margin-xl font-body-md text-body-md text-on-surface-variant"
+                  >
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary text-sm"
+                          style="font-variation-settings: 'FILL' 1"
+                          >check</span
+                        >
+                      </div>
+                      <span>Stereo or Stem Mastering</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary text-sm"
+                          style="font-variation-settings: 'FILL' 1"
+                          >check</span
+                        >
+                      </div>
+                      <span>LUFS Optimization</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary text-sm"
+                          style="font-variation-settings: 'FILL' 1"
+                          >check</span
+                        >
+                      </div>
+                      <span>Apple Digital Masters Ready</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary text-sm"
+                          style="font-variation-settings: 'FILL' 1"
+                          >check</span
+                        >
+                      </div>
+                      <span>2 Revisions Included</span>
+                    </div>
+                  </div>
+                  <div
+                    class="mt-auto border-t border-outline-variant/30 pt-gutter-md flex justify-between items-end"
+                  >
+                    <div>
+                      <span
+                        class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1"
+                        >Turnaround</span
+                      >
+                      <span
+                        class="font-headline-md text-headline-md text-on-surface"
+                        >2-3
+                        <span class="text-xl text-on-surface-variant"
+                          >Days</span
+                        ></span
+                      >
+                    </div>
+                    <div class="text-right">
+                      <span
+                        class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1"
+                        >Starting From</span
+                      >
+                      <span
+                        class="font-headline-md text-headline-md text-primary"
+                        >$120</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="group relative bg-surface-glass backdrop-blur-2xl border border-white/5 rounded-2xl overflow-hidden shadow-2xl hover:shadow-[0_0_40px_rgba(212,175,55,0.15)] transition-all duration-500 hover:-translate-y-2"
+              >
+                <div
+                  class="absolute top-0 left-0 w-full h-1 bg-surface-variant group-hover:bg-primary transition-colors"
+                ></div>
+                <div class="p-gutter-md h-full flex flex-col relative z-10">
+                  <div class="mb-gutter-md flex justify-between items-start">
+                    <h2
+                      class="font-headline-lg text-headline-lg text-on-surface"
+                    >
+                      Production
+                    </h2>
+                    <span
+                      class="font-label-caps text-label-caps text-on-surface-variant uppercase bg-surface-variant/50 border border-white/5 px-3 py-1 rounded-full"
+                      >Под ключ</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-margin-xl flex-grow"
+                  >
+                    From raw idea to finished master. Full arrangement, sound
+                    design, recording direction, mixing, and mastering tailored
+                    to your unique artistic vision.
+                  </p>
+                  <div
+                    class="space-y-4 mb-margin-xl font-body-md text-body-md text-on-surface-variant"
+                  >
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary text-sm"
+                          style="font-variation-settings: 'FILL' 1"
+                          >check</span
+                        >
+                      </div>
+                      <span>Beatmaking &amp; Arrangement</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary text-sm"
+                          style="font-variation-settings: 'FILL' 1"
+                          >check</span
+                        >
+                      </div>
+                      <span>Sound Design &amp; Synthesis</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary text-sm"
+                          style="font-variation-settings: 'FILL' 1"
+                          >check</span
+                        >
+                      </div>
+                      <span>Mixing &amp; Mastering Included</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary text-sm"
+                          style="font-variation-settings: 'FILL' 1"
+                          >check</span
+                        >
+                      </div>
+                      <span>Unlimited Revisions</span>
+                    </div>
+                  </div>
+                  <div
+                    class="mt-auto border-t border-outline-variant/30 pt-gutter-md flex justify-between items-end"
+                  >
+                    <div>
+                      <span
+                        class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1"
+                        >Turnaround</span
+                      >
+                      <span
+                        class="font-headline-md text-headline-md text-on-surface"
+                        >2-4
+                        <span class="text-xl text-on-surface-variant"
+                          >Weeks</span
+                        ></span
+                      >
+                    </div>
+                    <div class="text-right">
+                      <span
+                        class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1"
+                        >Starting From</span
+                      >
+                      <span
+                        class="font-headline-md text-headline-md text-primary"
+                        >$800</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="w-full bg-surface-container-low py-margin-xl relative overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 z-0 opacity-10"
+            data-alt="A macro shot of professional analog recording studio equipment, focusing on the illuminated VU meters and intricate wiring of a mixing console, cinematic lighting, deep blacks and cyan accents, high fidelity."
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWWuafRdLF-y7gNNpHoq_wH7YC4skn6QjoOsvWDK5K4RxWxLpoGkmbTCi97XsfqQtEANfUwEOTwjW2ZucX4xJiD3Gdg72akD13Ch_by8zAJJ-bNYA7Sn_xn9HOJEJ7F-H26d2005OH8slf-9TeVatF4fmRvNt8IslX42d1ckeYefiYZy33GVOYP4Fbnp2ynatxcS4Nrw3YR4jqDG-VQwGEUngbsyGdI61NnbUrof7HPXluLMNN83E');
+            "
+          ></div>
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/90 to-transparent z-10"
+          ></div>
+          <div
+            class="container mx-auto px-safe-area relative z-20 flex flex-col items-center justify-center text-center"
+          >
+            <h2
+              class="font-display-lg text-display-lg text-on-surface mb-gutter-md"
+            >
+              Signal Flow Ready.
+            </h2>
+            <p
+              class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-margin-xl"
+            >
+              Upload your stems or rough mixes securely. We'll review your
+              material and provide a detailed quote and timeline.
+            </p>
+            <a
+              class="group relative inline-flex items-center justify-center bg-primary text-on-primary font-headline-md text-headline-md px-12 py-6 rounded-sm overflow-hidden hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all duration-300"
+              data-path="order"
+              href="#"
+            >
+              <span
+                class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"
+              ></span>
+              <span class="relative z-10 flex items-center gap-4"
+                >Initialize Project
+                <span class="material-symbols-outlined"
+                  >arrow_right_alt</span
+                ></span
+              >
+            </a>
+          </div>
+        </section>
+      </div>
+      <style>
+        @keyframes shimmer {
+          100% {
+            transform: translateX(100%);
+          }
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .hide-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      </style>
+    </main>
+    <footer
+      class="w-full bg-surface-container-lowest py-margin-xl border-t border-outline-variant/10"
+    >
+      <div
+        class="w-full px-safe-area flex flex-col md:flex-row justify-between items-center gap-gutter-md"
+      >
+        <div class="flex flex-col gap-unit">
+          <div class="font-headline-md text-on-surface">Studio Aesthetic</div>
+          <p class="text-on-surface-variant font-body-md">
+            Professional sound engineering for modern artists.
+          </p>
+        </div>
+        <div class="flex gap-gutter-md">
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors"
+            href="#"
+            ><span class="material-symbols-outlined">share</span></a
+          ><a
+            class="text-on-surface-variant hover:text-primary transition-colors"
+            href="#"
+            ><span class="material-symbols-outlined">podcasts</span></a
+          ><a
+            class="text-on-surface-variant hover:text-primary transition-colors"
+            href="#"
+            ><span class="material-symbols-outlined">headphones</span></a
+          >
+        </div>
+      </div>
+      <div
+        class="w-full px-safe-area mt-gutter-md pt-gutter-md border-t border-outline-variant/5 text-on-surface-variant font-label-caps text-center md:text-left"
+      >
+        © 2024 Sonic Precision Studio. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

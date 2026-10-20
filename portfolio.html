@@ -1,0 +1,348 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-background font-body-md text-on-surface">
+    <header
+      class="fixed top-0 w-full z-50 bg-surface-glass backdrop-blur-2xl border-b border-border-glow shadow-[0_4px_24px_rgba(0,0,0,0.4)]"
+    >
+      <div
+        class="h-20 w-full px-safe-area md:px-margin-xl flex items-center justify-between"
+      >
+        <div class="flex items-center gap-unit">
+          <img
+            alt="Sonic Precision Logo"
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoggLBv3pA14YNcMcbBTmJYSub-KUnmS3cLwuKFS6Q1yDZQVrXmpzddCWHZEpOhJuF3kkx3yIsb16LJ8MzSgDvARFzHf1FD-3zxYcJ2J35XDaja0QNGxdIo9gqZ8MLndxHYrxlwyFnMVX6P09FTNzBJ4WkYHvfSB6yf_7HJ95HMgohzISE-ThY_59uW3U_A2-XwsmwNrrs-c-pwmuxb7roGRa8l9gA6rwUno0Y46cyZ3uo27M-vIg"
+          />
+          <span
+            class="font-headline-md text-primary tracking-tighter uppercase"
+          >
+            Sonic Precision
+          </span>
+        </div>
+
+        <nav
+          class="hidden md:flex items-center gap-gutter-md"
+          data-active-classes="text-primary font-bold"
+        >
+          <a
+            aria-current="page"
+            class="transition-all uppercase text-primary font-bold font-label-caps"
+            data-path="home"
+            href="./index.html"
+          >
+            Главная
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="portfolio"
+            href="./portfolio.html"
+          >
+            Работы
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="player"
+            href="./tracks.html"
+          >
+            Треки
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="services"
+            href="./services.html"
+          >
+            Услуги
+          </a>
+          <a
+            class="font-label-caps text-on-surface-variant hover:text-primary transition-all uppercase"
+            data-path="order"
+            href="./order.html"
+          >
+            Заказ
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="w-full pt-20 min-h-screen">
+      <div class="flex flex-col w-full px-margin-xl py-gutter-md">
+        <div class="flex flex-wrap items-center gap-2 mb-gutter-md">
+          <button
+            class="bg-primary/20 text-primary border border-primary shadow-[0_0_15px_rgba(212,175,55,0.15)] font-body-md px-6 py-2.5 rounded-full hover:shadow-[0_0_20px_rgba(212,175,55,0.25)] transition-all"
+          >
+            All
+          </button>
+          <button
+            class="bg-surface/50 backdrop-blur-md text-on-surface-variant border border-outline-variant font-body-md px-6 py-2.5 rounded-full hover:bg-primary/10 hover:text-primary hover:border-primary/50 transition-all"
+          >
+            Rock
+          </button>
+          <button
+            class="bg-surface/50 backdrop-blur-md text-on-surface-variant border border-outline-variant font-body-md px-6 py-2.5 rounded-full hover:bg-primary/10 hover:text-primary hover:border-primary/50 transition-all"
+          >
+            Electronic
+          </button>
+          <button
+            class="bg-surface/50 backdrop-blur-md text-on-surface-variant border border-outline-variant font-body-md px-6 py-2.5 rounded-full hover:bg-primary/10 hover:text-primary hover:border-primary/50 transition-all"
+          >
+            Pop
+          </button>
+          <button
+            class="bg-surface/50 backdrop-blur-md text-on-surface-variant border border-outline-variant font-body-md px-6 py-2.5 rounded-full hover:bg-primary/10 hover:text-primary hover:border-primary/50 transition-all"
+          >
+            Cinematic
+          </button>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-md"
+        >
+          <div
+            class="group relative overflow-hidden rounded-xl bg-surface-variant/40 backdrop-blur-xl border border-outline-variant/30 shadow-lg transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.1)] hover:border-primary/30 cursor-pointer"
+          >
+            <div class="w-full h-64 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-variant/80 to-transparent z-10 pointer-events-none"
+              ></div>
+              <img
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                data-alt="A moody, high-contrast digital illustration of a rock band performing in a stylized, futuristic club. Intense neon cyan lighting cutting through deep charcoal smoke. The aesthetic is gritty but highly polished, capturing the essence of modern alternative rock production."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuByxevEgvjRDqp8oEzJJAXX5nEeAqCwhRZ4yEHkz0W28tsg02ZbNHnnakcrIval7kF-S8uQYnggZgedULMnjVs95a4EOQ7KZ8L_T3F172dsgApyY926NTeAbVOJaZncvRtmzv0Z1L1ow9FZadCZCf4u8xIaZ4bTjZmUf3ZFCOVoLO_lId57bDq8ZjNIhD51STNBiz-NLBUjzODuRLA9p637zDDqdXcTFqF_dE7AWhy-K2rxFXySh7Y"
+              />
+              <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+                <span
+                  class="font-label-caps text-label-caps text-primary bg-background/60 backdrop-blur-md px-2.5 py-1.5 rounded border border-primary/40 uppercase"
+                  >Mixing</span
+                >
+                <span
+                  class="font-label-caps text-label-caps text-primary bg-background/60 backdrop-blur-md px-2.5 py-1.5 rounded border border-primary/40 uppercase"
+                  >Mastering</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-2 truncate group-hover:text-primary transition-colors"
+              >
+                Neon Genesis
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant truncate"
+              >
+                The Midnight Echoes
+              </p>
+            </div>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-xl bg-surface-variant/40 backdrop-blur-xl border border-outline-variant/30 shadow-lg transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.1)] hover:border-primary/30 cursor-pointer"
+          >
+            <div class="w-full h-64 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-variant/80 to-transparent z-10 pointer-events-none"
+              ></div>
+              <img
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                data-alt="Abstract 3D rendered artwork featuring floating, glowing geometric shapes in a dark void. Electric lime and cyan hues reflecting off metallic surfaces, representing precise, high-fidelity electronic music production."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi8YWZG6E97u0HMbjWXksnkI7vouKSx0AL9-0NKGEiyE9uWqGAfauJmK9-VzP9F5Y2S4rRQoZJGp_8sGjVJ5_7M7EPgHOUob-M6VbevGmq9itx_sO4yE9H1BMb8-_weXYd8cwUiwoDLaH_Cg_mQMhgyRkf9qMX4xgsVUQqbWSzSEWfScvEJKmxTbZfwaSsCBlArAWzWMS9L16ChbxkdbumhzD9K-2F1wVem--wunhW_GoUMDs9BdY"
+              />
+              <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+                <span
+                  class="font-label-caps text-label-caps text-primary bg-background/60 backdrop-blur-md px-2.5 py-1.5 rounded border border-primary/40 uppercase"
+                  >Mastering</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-2 truncate group-hover:text-primary transition-colors"
+              >
+                Quantized Dreams
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant truncate"
+              >
+                DJ Synthetica
+              </p>
+            </div>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-xl bg-surface-variant/40 backdrop-blur-xl border border-outline-variant/30 shadow-lg transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.1)] hover:border-primary/30 cursor-pointer"
+          >
+            <div class="w-full h-64 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-variant/80 to-transparent z-10 pointer-events-none"
+              ></div>
+              <img
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                data-alt="A cinematic, wide-angle shot of a desolate, atmospheric landscape with a single figure looking towards a glowing horizon. Deep blues and stark blacks dominate, conveying emotional depth and expansive soundscapes."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwgFPoVBIkyhns-2pH7RhdvSkgWkeD6NRihVmq0HebSewtdJ5MCw53-66mGP0aHnxR7qEbuKB-YynfaN2kcugMtEqa4SkQqDKcWOUIpQbMMMiTUVBsajJnIl1T_MRUdwpQGHVjl0XzIMCtwZJujl4hgDNPHSLv1VZ9Rbe36BK1YcNIfMzuLSX_7b3vwRobmEu1A56jjTBuwtr6kEGSwzYuLUAX19PKL4MWzq4_zJ98nFR4hjqD8VA"
+              />
+              <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+                <span
+                  class="font-label-caps text-label-caps text-primary bg-background/60 backdrop-blur-md px-2.5 py-1.5 rounded border border-primary/40 uppercase"
+                  >Sound Design</span
+                >
+                <span
+                  class="font-label-caps text-label-caps text-primary bg-background/60 backdrop-blur-md px-2.5 py-1.5 rounded border border-primary/40 uppercase"
+                  >Mixing</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-2 truncate group-hover:text-primary transition-colors"
+              >
+                Echoes of the Fall
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant truncate"
+              >
+                Hans Zimmer
+              </p>
+            </div>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-xl bg-surface-variant/40 backdrop-blur-xl border border-outline-variant/30 shadow-lg transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.1)] hover:border-primary/30 cursor-pointer"
+          >
+            <div class="w-full h-64 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-variant/80 to-transparent z-10 pointer-events-none"
+              ></div>
+              <img
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                data-alt="Bright, punchy pop art style portrait of a female singer, featuring bold contrasting colors like vibrant cyan and deep charcoal. The image is crisp and modern, reflecting pristine vocal production."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-mBtcWxAf92wbQbiTyJ01o4XejlZAZJTdBgueB7MOPp2qR0aJcb5uNefz-MUie_NhPe_jFwOpfYi4n0wdIh2WVC2n4dmFp_RFRZn9zFcuUfUJOjMIYz8LZNBadapD5IOupASyF4Mebx4AatYHkNOSiun_hSx0-ZatbDZudCYXsgDGcKNjpL1Lrgo0qW_l9b15Lz8IYM-f2JP7M0n-Iqt1KdujMBaPMOnuOtn9z55OiN6cAjN5UWc"
+              />
+              <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+                <span
+                  class="font-label-caps text-label-caps text-primary bg-background/60 backdrop-blur-md px-2.5 py-1.5 rounded border border-primary/40 uppercase"
+                  >Vocal Production</span
+                >
+                <span
+                  class="font-label-caps text-label-caps text-primary bg-background/60 backdrop-blur-md px-2.5 py-1.5 rounded border border-primary/40 uppercase"
+                  >Mixing</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-2 truncate group-hover:text-primary transition-colors"
+              >
+                Velvet Horizon
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant truncate"
+              >
+                Aria
+              </p>
+            </div>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-xl bg-surface-variant/40 backdrop-blur-xl border border-outline-variant/30 shadow-lg transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.1)] hover:border-primary/30 cursor-pointer"
+          >
+            <div class="w-full h-64 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-variant/80 to-transparent z-10 pointer-events-none"
+              ></div>
+              <img
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                data-alt="Gritty, black and white photograph of an analog mixing console covered in wires and patch cables. A subtle cyan glow emanates from one of the VU meters, highlighting a blend of old school warmth and modern precision."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaJBu3YHDQOutx0U_cS-_ydh1d7Cxii-P1qSXGIYVlIRAfKPunTcFjNJhsTinmWdFSQ6Q-Sj9vmo0M-ulbRBLpmRbwsK6ACW0r9wC6Y53TWgTP9ymBJgpcKc5Y2Mp3Rule4L6kbVrNFMc8Sos89UWYS_21mbWPijah1704x9LRlO3nyqd-fRd4YzpWD_nzGR6Ie0P0rfzlFvweX1qeNZbG_59SUAuBwFmJ9dcFhn-e698NOCr9gSU"
+              />
+              <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+                <span
+                  class="font-label-caps text-label-caps text-primary bg-background/60 backdrop-blur-md px-2.5 py-1.5 rounded border border-primary/40 uppercase"
+                  >Analog Summing</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-2 truncate group-hover:text-primary transition-colors"
+              >
+                Tape Saturation
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant truncate"
+              >
+                The Analogues
+              </p>
+            </div>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-xl bg-surface-variant/40 backdrop-blur-xl border border-outline-variant/30 shadow-lg transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.1)] hover:border-primary/30 cursor-pointer"
+          >
+            <div class="w-full h-64 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-variant/80 to-transparent z-10 pointer-events-none"
+              ></div>
+              <img
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                data-alt="A stylized, macro shot of a microphone capsule, with intricate metallic mesh details in sharp focus. Deep shadows surround the mic, emphasizing clarity and high-end capture."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfiymAO7r8ampWKJu4hqEaUNEQAweW3qxXejKHCRRvOW_jkRygS4ikvr0orA4Rv_uBlUr4m-HKT-KIJHvErSwamoRTDjgSu6T2c1JVbL_ALXi3n7qP1EAFU6gXbK3nRnufDBpPGwP4ogRlTZkaJVUfPAXPcBVS2sea82z8sRz8QUo7v92Yg4-o_OH_-kdjj_9WIObKEeOpowdSF4lQkzwnIlbyBRGy4JloJr1RPeg9oqezL3XgXkU"
+              />
+              <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+                <span
+                  class="font-label-caps text-label-caps text-primary bg-background/60 backdrop-blur-md px-2.5 py-1.5 rounded border border-primary/40 uppercase"
+                  >Recording</span
+                >
+                <span
+                  class="font-label-caps text-label-caps text-primary bg-background/60 backdrop-blur-md px-2.5 py-1.5 rounded border border-primary/40 uppercase"
+                  >Mixing</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-2 truncate group-hover:text-primary transition-colors"
+              >
+                Crystal Clear
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant truncate"
+              >
+                Acoustic Sessions
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-lowest py-margin-xl border-t border-outline-variant/20"
+    >
+      <div
+        class="w-full px-margin-xl flex flex-col md:flex-row justify-between items-center gap-gutter-md"
+      >
+        <div class="flex flex-col gap-unit">
+          <div class="font-headline-md text-on-surface">Studio Aesthetic</div>
+          <p class="text-on-surface-variant font-body-md">
+            Professional sound engineering for modern artists.
+          </p>
+        </div>
+        <div class="flex gap-gutter-md">
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors"
+            href="#"
+            ><span class="material-symbols-outlined">share</span></a
+          ><a
+            class="text-on-surface-variant hover:text-primary transition-colors"
+            href="#"
+            ><span class="material-symbols-outlined">podcasts</span></a
+          ><a
+            class="text-on-surface-variant hover:text-primary transition-colors"
+            href="#"
+            ><span class="material-symbols-outlined">headphones</span></a
+          >
+        </div>
+      </div>
+      <div
+        class="w-full px-margin-xl mt-gutter-md pt-gutter-md border-t border-outline-variant/10 text-on-tertiary-container font-label-caps text-center md:text-left"
+      >
+        © 2024 Sonic Precision Studio. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
